@@ -48,7 +48,7 @@
   esc   f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
   `     1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab   q    w    e    r    t    y    u    i    o    p    [    ]    ret
-  caps @a_gui @s_ctl @d_alt @f_sft g    h    @j_sft @k_alt @l_ctl @sc_gui '    \
+  esc @a_gui @s_ctl @d_alt @f_sft g    h    @j_sft @k_alt @l_ctl @sc_gui '    \
   lsft  z    x    c    v    b    n    m    ,    .    /    rsft
   lctl  lalt lmet           @spc_sym       rmet ralt
 )
@@ -62,10 +62,10 @@
   S-`    XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
 
   ;; qwerty row (operators)
-  XX   S--  S-=  -    =    XX   S-1  S-7  S-\  S-6  XX   XX   XX   XX
+  XX   XX   S--  S-=  -    =    S-1  S-7  S-\  S-6  XX   XX   XX   XX
 
   ;; home row (grouping symbols)
-  XX   S-9  S-0  S-[  S-]  XX   [    ]    S-,  S-.  XX   XX   XX
+  XX   S-9  S-0  S-[  S-]  XX   [    ]    S-3  S-4  XX   XX   XX
 
   ;; bottom row (less frequent)
   XX   S-`    S-8    /    S-5    XX   S-/  S-;  ;    ,    XX   XX
