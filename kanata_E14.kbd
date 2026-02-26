@@ -18,7 +18,7 @@
 ;; ---------- TIMING ----------
 (defvar
   tap-time 200
-  hold-time 200
+  hold-time 150
 )
 
 ;; ---------- ALIASES ----------
@@ -32,13 +32,13 @@
   a_gui  (tap-hold $tap-time $hold-time a lmet)
   s_ctl  (tap-hold $tap-time $hold-time s lctl)
   ;; Alt → numbers
-  d_alt (tap-hold $tap-time $hold-time d (layer-while-held num))
+  d_alt (tap-hold $tap-time $hold-time d lalt)
   f_sft  (tap-hold $tap-time $hold-time f lsft)
 
   ;; Right hand (mirrored)
   j_sft  (tap-hold $tap-time $hold-time j lsft)
   ;; Alt → numbers
-  k_alt (tap-hold $tap-time $hold-time k (layer-while-held num))
+  k_alt (tap-hold $tap-time $hold-time k lalt)
   l_ctl  (tap-hold $tap-time $hold-time l lctl)
   sc_gui (tap-hold $tap-time $hold-time ; lmet)
   ;; Arrow macro
@@ -70,28 +70,8 @@
   XX   S-9  S-0  S-[  S-]  @arrow   [    ]    S-8  S-3  XX   XX   XX
 
   ;; bottom row (less frequent)
-  XX   S-`    S-4    /    S-5    XX   \   S-,  S-.    ,    XX   XX
+  XX   S-`    S-4    /    S-5    S-2   \   S-,  S-.    ,    XX   XX
 
   ;; thumbs
   XX   XX   XX          XX          XX   XX
-)
-
-;; ---------- NUMBERS LAYER (compact, default order) ----------
-(deflayer num
-  XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
-
-  ;; unused number row
-  XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
-
-  ;; qwerty row
-  XX   1    2    3    4    5    6    7    8    9    0    XX   XX   XX
-
-  ;; home row
-  XX   XX   XX   XX   XX   XX   XX   XX    XX    XX    XX   XX   XX
-
-  ;; bottom row
-  XX   XX   XX   XX   XX   XX   XX   XX    XX    XX    XX   XX
-
-  ;; thumbs
-  XX   XX   XX          XX           XX    XX
 )
